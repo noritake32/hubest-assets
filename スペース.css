@@ -1,0 +1,41 @@
+/* 共通スタイル */
+.basic-space-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+
+  /* 外枠と影 */
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+
+  /* ホバーアニメーション */
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+/* ホバー時：軽く拡大 & 枠色強調 */
+.basic-space:hover .basic-space-img {
+  transform: scale(1.1);
+  border-color: #4facfe; /* ホバー時の枠色：ブルー */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 個別スペース背景設定 */
+
+.basic-space-img--HC {
+  background-image: url('https://noritake32.github.io/hubest-assets/honda.png'); /* ホンダカーズ佐賀 */
+}
+
+.basic-space-img--物流 {
+  background-image: url('https://noritake32.github.io/hubest-assets/物流B.png'); /* 物流 */
+}
+
+.basic-space-img--本社 {
+  background-image: url('https://noritake32.github.io/hubest-assets/PC.jpg'); /* 本社 */
+}
+
+.basic-space-img--バックアップ {
+  background-image: url('https://noritake32.github.io/hubest-assets/cloud.jpg'); /* バックアップ */
+}

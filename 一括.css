@@ -1,0 +1,58 @@
+/* Google Fonts: Kosugi Maru（読み込みはJSで別途） */
+.basic-app-name {
+  font-family: 'Kosugi Maru', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.4;
+  color: #333;
+  margin-top: 8px;
+}
+
+/* アプリアイコンサイズと中央配置 */
+.basic-app-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.basic-app-icon-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* ホバー時に拡大＋影 */
+.basic-app:hover .basic-app-icon {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* アプリ一覧をグリッド化 */
+.basic-appSet {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+}
+
+/* カラーバリエーション（全15色例） */
+.basic-app-icon--blue    { background: linear-gradient(to bottom, #4facfe, #00f2fe); }
+.basic-app-icon--sky     { background: linear-gradient(to bottom, #90e0ef, #00b4d8); }
+.basic-app-icon--aqua    { background: linear-gradient(to bottom, #00f5d4, #00bbf9); }
+.basic-app-icon--navy    { background: linear-gradient(to bottom, #3a0ca3, #4361ee); }
+.basic-app-icon--green   { background: linear-gradient(to bottom, #a8e063, #56ab2f); }
+.basic-app-icon--lime    { background: linear-gradient(to bottom, #d0ff00, #76b947); }
+.basic-app-icon--yellow  { background: linear-gradient(to bottom, #ffe066, #ffcc00); }
+.basic-app-icon--orange  { background: linear-gradient(to bottom, #ffb347, #ff8008); }
+.basic-app-icon--red     { background: linear-gradient(to bottom, #ff6a6a, #e60000); }
+.basic-app-icon--pink    { background: linear-gradient(to bottom, #fbc2eb, #f68084); }
+.basic-app-icon--purple  { background: linear-gradient(to bottom, #a18cd1, #fbc2eb); }
+.basic-app-icon--gray    { background: linear-gradient(to bottom, #cccccc, #999999); }
+.basic-app-icon--black   { background: linear-gradient(to bottom, #333333, #000000); }
+.basic-app-icon--teal    { background: linear-gradient(to bottom, #00c9a7, #92fe9d); }
+.basic-app-icon--gold    { background: linear-gradient(to bottom, #f6d365, #fda085); }
